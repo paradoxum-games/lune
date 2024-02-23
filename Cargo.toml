@@ -132,8 +132,8 @@ rand = { optional = true, version = "0.8" }
 
 rbx_cookie = { optional = true, version = "0.1.4", default-features = false }
 
-rbx_binary = { optional = true, version = "0.7.3" }
-rbx_dom_weak = { optional = true, version = "2.6.0" }
-rbx_reflection = { optional = true, version = "4.4.0" }
-rbx_reflection_database = { optional = true, version = "0.2.9" }
-rbx_xml = { optional = true, version = "0.13.2" }
+rbx_binary = { optional = true, git = "https://github.com/rojo-rbx/rbx-dom.git", rev = "6ccd30f", default-features = false }
+rbx_dom_weak = { optional = true, git = "https://github.com/rojo-rbx/rbx-dom.git", rev = "6ccd30f" }
+rbx_reflection = { optional = true, git = "https://github.com/rojo-rbx/rbx-dom.git", rev = "6ccd30f" }
+rbx_reflection_database = { optional = true, git = "https://github.com/rojo-rbx/rbx-dom.git", rev = "6ccd30f" }
+rbx_xml = { optional = true, git = "https://github.com/rojo-rbx/rbx-dom.git", rev = "6ccd30f" }
