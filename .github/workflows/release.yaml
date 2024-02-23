@@ -34,24 +34,14 @@ jobs:
       matrix:
         include:
           - name: Windows x86_64
-            runner-os: windows-latest
+            runner-os: windows-xlarge
             artifact-name: lune-${{ needs.init.outputs.version }}-windows-x86_64
             cargo-target: x86_64-pc-windows-msvc
 
           - name: Linux x86_64
-            runner-os: ubuntu-latest
+            runner-os: ubuntu-xlarge
             artifact-name: lune-${{ needs.init.outputs.version }}-linux-x86_64
             cargo-target: x86_64-unknown-linux-gnu
-
-          - name: Linux aarch64
-            runner-os: ubuntu-latest
-            artifact-name: lune-${{ needs.init.outputs.version }}-linux-aarch64
-            cargo-target: aarch64-unknown-linux-gnu
-
-          - name: macOS x86_64
-            runner-os: macos-latest
-            artifact-name: lune-${{ needs.init.outputs.version }}-macos-x86_64
-            cargo-target: x86_64-apple-darwin
 
           - name: macOS aarch64
             runner-os: macos-latest
